@@ -21,101 +21,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
     rel="stylesheet"
     />
-
-
-    <style>
-      body{
-        margin: 0;
-        padding: 0;
-        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-      }
-      .container{
-        display: grid;
-        grid-template-columns: [first] 300px [line2] auto;
-        margin: 0;
-        padding: 0;
-      }
-      .table{
-        width: 1000px;
-        margin-left: 50px;
-        margin-top: 80px;
-      }
-      tbody, td, tfoot, th, thead, tr {
-        border-color: inherit;
-        border-style: solid;
-        border-width: 0;
-        width: 1000px;
-      }
-      .primer_a{
-        margin-right: 60px;
-      }
-      .nav-item {  
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-bottom: 20px;
-      }
-      .nav-item:nth-child(1){
-        margin-top: 160px;
-      }
-      .img-fluid{
-        background-size: contain;
-      }
-      .btn{
-        width: auto;
-        
-      }
-      .cont_principal{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-      .cont_principal img{
-        width: 400px;
-      }
-      .cont_principal p{
-        margin-top: 40px;
-      }
-      .videos{
-        flex-direction: column;
-        align-items: center;
-      }
-      .videos .video1{
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-      .videos .video2{
-        margin-bottom: 30px;
-      }
-      .form-formulario{
-        justify-content: center;
-        margin-top: 60px;
-      }
-      @media screen and (min-width: 270px) and (max-width: 1025px){
-        .container{
-          display: block;
-        }
-        .cont_principal{
-          grid-template-columns: auto;
-          grid-template-rows: 1fr 1fr;
-        }
-        .imagen img{
-          width: 370px;
-        }
-        .texto p {
-          width: 370px;
-        }
-        .table{
-          margin: 0;
-          width: 300px;
-        }
-        .videos .video1{
-          width: 370px;
-        }
-        .videos .video2{
-          width: 370px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
@@ -162,45 +68,51 @@
             <div class="imagen"><img src="./img/miami.jpg" alt=""></div>
             <div class="texto"><p>Miami Beach es una ciudad insular del sur de Florida, que se conecta a través de puentes con el territorio de Miami. Sus largas playas se extienden desde el North Shore Open Space Park, pasa por Lummus Park, bordeado de palmeras, y llegan a South Pointe Park. El extremo sur, South Beach, es conocido por su distinción internacional con modelos y celebridades y su arquitectura de comienzos del siglo XX en el distrito histórico de estilo art deco, que tiene edificios color pastel, especialmente en Ocean Drive.</p></div>
           </section>
-
-          <table class="table" id="tablas" style="display:none;">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Habitantes</th>
-                <th scope="col">% de latinos</th>
-                <th scope="col">% trabajo para latinos</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">2022</th>
-                <td> 5.333.945</td>
-                <td>68,6%</td>
-                <td>70%</td>
-              </tr>
-              <tr>
-                <th scope="row">2021</th>
-                <td>5.103.945</td>
-                <td>68,3%</td>
-                <td>45%</td>
-              </tr>
-              <tr>
-                <th scope="row">2020</th>
-                <td>5.088.945</td>
-                <td>68,1%</td>
-                <td>45%</td>
-              </tr>
-              <tr>
-                <th scope="row">2019</th>
-                <td>5.048.945</td>
-                <td>63%</td>
-                <td>55%</td>
-              </tr>
-            </tbody>
-          </table>
+          <section id="tablas" style="display:none;">
+            <div><h1>estadisticas latinas</h1></div>
+            <div><p>Vamos a presentar pequeño cuadro de las estadísticas de la comunidad latina en miami, referente a periodos desde el 2019 hasta el 2022. Se realizo una encuesta principalmente a comunidad latina ubicada en el sur y de miami, también se realizo encuesta a comunidad americana principalmente administradores de negocios comerciales y dueños de tiendas o cadenas de ropa y comida.</p></div>
+            <table class="table" >
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Habitantes</th>
+                  <th scope="col">% de latinos</th>
+                  <th scope="col">% trabajo para latinos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">2022</th>
+                  <td> 5.333.945</td>
+                  <td>68,6%</td>
+                  <td>70%</td>
+                </tr>
+                <tr>
+                  <th scope="row">2021</th>
+                  <td>5.103.945</td>
+                  <td>68,3%</td>
+                  <td>45%</td>
+                </tr>
+                <tr>
+                  <th scope="row">2020</th>
+                  <td>5.088.945</td>
+                  <td>68,1%</td>
+                  <td>45%</td>
+                </tr>
+                <tr>
+                  <th scope="row">2019</th>
+                  <td>5.048.945</td>
+                  <td>63%</td>
+                  <td>55%</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          
 
           <section class="videos" id="Video" style="display:none;">
+            <div><h1>La verdadera vida latina en miami</h1></div>
+            <div><p>Vamos a mostrar unos videos de residentes latinos en miami tomado de su canal de youtube “la blue kombi”, apoyando siempre estos creadores de contenido latino y sin la intención de robar su contenido, antes, por el contrario apoyando su canal y mostramos por eso su trabajo en esta web.</p></div>
             <iframe class="video1" width="560" height="315" src="https://www.youtube.com/embed/PSGxgCYtNug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe class="video2" width="560" height="315" src="https://www.youtube.com/embed/PQeM1Xe5x1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </section>
